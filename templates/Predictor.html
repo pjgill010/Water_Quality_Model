@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Can I Drink my H2O ?</title>
+    <style>
+      body {
+        background-image: url("https://science.osti.gov/-/media/Initiatives/images/ai_banner.jpg?h=320&w=905&la=en&hash=8F62F5794F19B008A2812A1C2B4421B59252ED230302C24709FDDDDA3453A5D1");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #header {
+        background-color: rgba(255, 255, 255, 0.7);
+        color:rgb(13, 13, 159);
+        padding: 20px;
+        text-align: center;
+      }
+      
+      #header h1 {
+        margin: 0;
+      }
+      
+      #nav {
+        background-color: #f1f1f1;
+        overflow: hidden;
+      }
+      
+      #nav a {
+        float: left;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      #nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1><b>Can I Drink My H2O ?</b></h1>
+    </div>
+    <div id="nav">
+      <div id="nav">
+        <a href="index"><h4>Home</h4></a>
+        <a href="about"><h4>About</h4></a>
+        <a href="graphs"><h4>Data</h4></a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <div class="container overflow-hidden text-center">
+      <div class="row gx-5">
+        <div class="col">
+        <form method="POST">
+          <!--action="../static/Predictor.html" role="form">-->
+          <div class="p-3" style="color: rgb(255, 255, 255);" style="font-weight: bold;"><h5><i>"Give us information about the quality of water you have, so we can tell if you can drink this water to protect your health."</h5></i></div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">ph</span>
+            <input type="text" id="ph" name="ph" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="The indicator of acidic." step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text">Hardness</span>
+            <input type="text" id="Hardness" name="Hardness" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Capacity of water to precipitate soap in mg/L" step="any"/>
+          </div>
+  
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Solids" >Solids</span>
+            <input type="text" id="Solids" name="Solids" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Total dissolved solids in ppm" step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Chloramines" >Chloramines</span>
+            <input type="text" id="Chloramines" name="Chloramines" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Amount of Chloramines in mg/L" step="any"/>
+          </div>
+          
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Sulfate" >Sulfate</span>
+            <input type="text" id="Sulfate" name="Sulfate" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Amount of Sulfates dissolved in mg/L" step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Conductivity" >Conductivity</span>
+            <input type="text" id="Conductivity" name="Conductivity" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Electrical conductivity of water in μS/cm" step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Organic_carbon" >Organic Carbon</span>
+            <input type="text" id="Organic_carbon" name="Organic_carbon" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Amount of organic carbon in mg/L" step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Trihalomethanes" >Trihalomethanes</span>
+            <input type="text" id="Trihalomethanes" name="Trihalomethanes" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Amount of THMs in ppm" step="any"/>
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <span class="input-group-text" id="Turbidity" >Turbidity</span>
+            <input type="text" id="Turbidity" name="Turbidity" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Measure of Turbidity in NTU" step="any"/>
+          </div>
+  
+          
+
+          <button class="btn btn-primary btn-lg" type="submit" value="Submit" type="button">Run</button>
+          <button class="btn btn-secondary btn-lg" type="reset" style="margin-left: 10px;">Reset</button>
+        </form>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+      <div class="col">
+        <div class="p-3"><h2><span id="outputDisplay"></span></h2></div>
+      </div>
+    </div>
+  </div>
+
+
+  
+    <script>
+    const outputValue = "{{output}}";
+    const outputDisplay = document.getElementById("outputDisplay");
+    outputDisplay.textContent = outputValue;
+    outputDisplay.textContent = "";
+
+    const thumbsElement = document.createElement("span");
+    thumbsElement.classList.add("thumbs");
+    thumbsElement.style.fontWeight = "bold";
+
+    if (outputValue === "Class 0") {
+        thumbsElement.innerHTML = "&#128689; Don't Drink The Water ! &#128689"; // thumbs down emoji
+        thumbsElement.style.color = "red";
+    } else if (outputValue === "Class 1") {
+        thumbsElement.innerHTML = "&#128166; Stay Hydrated Please !"; // thumbs up emoji
+        thumbsElement.style.color = "white";
+    }
+
+    outputDisplay.appendChild(thumbsElement);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
