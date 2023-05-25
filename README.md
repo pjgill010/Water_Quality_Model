@@ -22,23 +22,11 @@ https://www.kaggle.com/datasets/adityakadiwal/water-potability
 
 ## Model Exploration
 - Logistic Regression: 60% Accuracy
-
-
 - Logistic regression with resampled data: 52% Accuracy
-
-
 - Random forest: 67% Accuracy
-
-
 - K-Neighbors: 69% Accuracy
-
-
 - XGboost classifier: 61% Accuracy
-
-
 - Support Vector Machine Model: 71% Accuracy
-
-
 
 ## Challenges
 
