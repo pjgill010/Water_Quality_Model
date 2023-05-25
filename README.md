@@ -1,5 +1,8 @@
 # Water_Quality_Model
 
+![water quality](https://github.com/pjgill010/Water_Quality_Model/assets/118948437/93c71932-2c75-4545-84b0-ae01ebb09cc0)
+
+
 ## Objective
 - Topic: Water Potability
 - Motivation: To find baseline for water quality
