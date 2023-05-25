@@ -44,6 +44,6 @@ https://www.kaggle.com/datasets/adityakadiwal/water-potability
 
 ## Summary
 
-- In conclusion, we have created a predictive machine learning model to test for water potability. This model can be paired with mobile testing equipment for individual assessment of new water samples.
+- In conclusion, we have created a predictive machine learning model and website to test for water potability. This model can be paired with mobile testing equipment for individual assessment of new water samples.
 
 
